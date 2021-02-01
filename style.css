@@ -1,0 +1,222 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/*** HERO ******************************/
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.hero-text h1 {
+  font-weight: 600;
+  font-size: 150px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  color: white;
+  font-family: 'Imbue', serif;
+}
+
+.hero-text p {
+  font-size: 20px;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image-drinks {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image-drinks h1 {
+  font-weight: 600;
+  font-size: 150px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  color: white;
+  font-family: 'Imbue', serif;
+}
+
+/*** HERO MEDIA **************************/
+
+@media only screen
+   and (min-width : 320px) {
+     .hero-text h1 {
+       font-weight: 600;
+       font-size: 65px;
+     }
+
+     .hero-text p {
+       font-size: 15px !important;
+     }
+}
+
+@media only screen
+   and (min-width : 768px) {
+     .hero-text h1 {
+       font-weight: 600;
+       font-size: 150px;
+ }
+}
+
+/*** TEXT AREA *****************************/
+
+.container-1 {
+  margin: 75px 30px 65px 30px;
+  background-color: white;
+  color: black;
+}
+
+.container-1-story {
+  width: 85%;
+  padding-left: 55px;
+  color: #383838;
+}
+
+.container-1-story h3 {
+  white-space: pre-wrap;
+  font-weight: 500;
+  margin-bottom: 32px;
+  line-height: 1.4em;
+  font-size: 2em;
+  display: block;
+
+}
+
+.container-1-contact p {
+  font-size: 14px;
+  color: #383838;
+
+}
+
+.container-1-contact h6 {
+  color: #383838;
+  font-weight: 600;
+  font-family: 'Imbue', serif;
+}
+
+/*** CAROUSEL **************************/
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+span.carousel-control-prev-icon, span.carousel-control-next-icon {
+  background-color: black;
+}
+
+.carousel-indicators a {
+  color: black;
+}
+
+@media (max-width:575px) {
+  .container-1-story {
+    width: 85%;
+    padding-left: 0px;
+    margin-bottom: 50px;
+  }
+
+  .carousel-item {
+    min-height: 80vh;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width:768px) {
+  .carousel-item {
+    min-height: 60vh;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
+/**** MENU GRID **************************/
+
+.menu-heading {
+  margin: 75px auto;
+  text-align: center;
+  font-family: 'Imbue', serif;
+  font-size: 45px;
+  letter-spacing: 1.5px;
+}
+
+.menu-food-item span {
+  font-weight: normal;
+  float: right !important;
+  font-size: 15px;
+}
+
+.menu-food-item {
+  font-weight: 500;
+  font-size:
+}
+
+.menu-health-facts {
+  color: #888;
+  font-size: 15px;
+}
+
+.menu-food-item-description {
+  font-size: 15px;
+}
+
+
+@media (max-width:768px) {
+     .menu-heading {
+       margin: 75px auto;
+       text-align: center;
+       font-family: 'Imbue', serif;
+       font-size: 30px;
+       letter-spacing: 1.5px;
+     }
+
+     .menu-food-item span {
+       font-style: normal;
+       text-align: right;
+     }
+
+     .menu-food-item {
+       font-weight: 500;
+       font-size: 15px !important;
+     }
+
+     .menu-health-facts {
+       color: #888;
+       font-size: 12px;
+     }
+
+     .menu-food-item-description {
+       font-size: 12px;
+     }
+}
