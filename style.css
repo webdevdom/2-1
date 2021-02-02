@@ -40,24 +40,6 @@ html, body {
   position: relative;
 }
 
-.hero-image-drinks {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  height: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-image-drinks h1 {
-  font-weight: 600;
-  font-size: 150px;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  white-space: nowrap;
-  color: white;
-  font-family: 'Imbue', serif;
-}
 
 /*** HERO MEDIA **************************/
 
@@ -113,8 +95,20 @@ html, body {
 
 .container-1-contact h6 {
   color: #383838;
-  font-weight: 600;
+  font-weight: 700;
   font-family: 'Imbue', serif;
+  font-size: 20px;
+}
+
+.photo-credits {
+  color: #B8B8B8;
+  font-size: 15px;
+}
+
+@media (max-width:768px) {
+  .container-1-story h3 {
+    font-size: 25px;
+  }
 }
 
 /*** CAROUSEL **************************/
@@ -220,3 +214,75 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
        font-size: 12px;
      }
 }
+
+/** DRINKS MENU *************************/
+
+.drink-menu-name, .drink-menu-ingredients, .drink-menu-ingredients,
+.drink-menu-price {
+  font-family: 'Lato', sans-serif !important;
+}
+
+.drink-menu-type {
+  text-align: center;
+  font-weight: 200;
+  font-size: 45px;
+  margin-bottom: 45px;
+  margin-top: 100px;
+  font-family: 'Imbue', serif;
+}
+
+.drink-menu-name {
+  font-weight: 200;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.drink-menu-ingredients {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.drink-menu-price {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.col-sm {
+  text-align: center;
+}
+
+@media (max-width:768px) {
+  .drink-menu-type {
+    margin: 75px auto;
+    text-align: center;
+    font-family: 'Imbue', serif;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+  }
+
+  .drink-menu-name {
+    font-weight: 200;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .drink-menu-ingredients {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .drink-menu-price {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+}
+
+/*** FOOTER *****************************/
